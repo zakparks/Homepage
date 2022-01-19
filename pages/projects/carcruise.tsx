@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import Footer from "../../components/footer";
 import styles from "../../styles/Home.module.css";
 
 const CarCruise: NextPage = () => {
@@ -20,19 +19,13 @@ const CarCruise: NextPage = () => {
 
         <div className={styles.grid}>
           <Link href="#">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className={`${styles.longCard} ${styles.card1}`}
-            >
+            <a target="_blank" rel="noreferrer" className={`${styles.longCard} ${styles.card1}`}>
               <h2>asdf</h2>
               <p>asdf</p>
             </a>
           </Link>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 };

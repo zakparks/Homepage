@@ -1,8 +1,11 @@
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
 
 const Footer = () => {
-  return <footer className={styles.footer}>©Zak Parks 2022</footer>;
+  return (
+    <footer className={styles.footer}>
+      <p>©Zak Parks 2022</p>
+    </footer>
+  );
 };
 
 export default Footer;
