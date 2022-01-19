@@ -1,5 +1,4 @@
 .container {
-  padding: 0 2rem;
   background-color: #1e1e1e;
   color: #eaeaea;
 }
@@ -12,6 +11,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.navbar {
+  color: #eaeaea;
+  background-color: #2d2d2d;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 15px 15px;
+  background-color: #2d2d2d;
+}
+
+.navbar a:hover {
+  background-color: #1e1e1e;
 }
 
 .footer {
