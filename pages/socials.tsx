@@ -9,7 +9,6 @@ const Social: NextPage = () => {
       <Head>
         <title>Zachary Parks</title>
         <meta name="description" content="Zachary Parks's Socials" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>

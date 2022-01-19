@@ -13,6 +13,8 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/manifest.json" />
 
+          <link rel="icon" href="/favicon.ico" />
+
           {/* Open Graph Meta Tags */}
           <meta property="og:title" content="Zachary Parks - Developer" />
           <meta

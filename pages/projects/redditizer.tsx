@@ -9,7 +9,6 @@ const Redditizer: NextPage = () => {
       <Head>
         <title>Zachary Parks</title>
         <meta name="description" content="Redditizer Discord Bot" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>

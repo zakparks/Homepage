@@ -9,7 +9,6 @@ const CarCruise: NextPage = () => {
       <Head>
         <title>Zachary Parks</title>
         <meta name="description" content="Car Cruise tally applications" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
