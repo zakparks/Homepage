@@ -67,14 +67,15 @@
 }
 
 .grid {
-  display: flex;
+  display: table;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
 }
 
-.card {
+.longCard {
+  display: table-cell;
   margin: 1px;
   padding: 1.5rem;
   text-align: left;
@@ -83,6 +84,18 @@
   border: 1px solid #eaeaea;
   transition: color 0.15s ease, border-color 0.15s ease;
   width: 800px;
+}
+
+.shortCard {
+  display: table-cell;
+  margin: 1px;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 398px;
 }
 
 .card1:hover,
@@ -120,12 +133,12 @@
   border-color: #c586c0;
 }
 
-.card h2 {
+.longCard h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
 }
 
-.card p {
+.longCard p {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -134,6 +147,11 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.img {
+  border: 1px solid #eaeaea;
+  max-width: 800px;
 }
 
 @media (max-width: 600px) {

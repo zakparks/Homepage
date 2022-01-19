@@ -24,14 +24,14 @@ const Home: NextPage = () => {
         </p>
 
         <Link href="/projects">
-          <a className={`${styles.card} ${styles.card1}`}>
+          <a className={`${styles.longCard} ${styles.card1}`}>
             <h2>Projects &rarr;</h2>
             <p>Personal Projects and professional work.</p>
           </a>
         </Link>
 
         <Link href="/resume">
-          <a className={`${styles.card} ${styles.card2}`}>
+          <a className={`${styles.longCard} ${styles.card2}`}>
             <h2>Resume &rarr;</h2>
             <p>
               A fancy, web-based version of the paper you probably got this link
@@ -41,14 +41,14 @@ const Home: NextPage = () => {
         </Link>
 
         <Link href="/socials">
-          <a className={`${styles.card} ${styles.card3}`}>
+          <a className={`${styles.longCard} ${styles.card3}`}>
             <h2>Socials &rarr;</h2>
             <p>Creep on me with the power of the internet.</p>
           </a>
         </Link>
 
         <Link href="">
-          <a className={`${styles.card} ${styles.card4}`}>
+          <a className={`${styles.longCard} ${styles.card4}`}>
             <h2>About me &rarr;</h2>
             <p>What I do and what I'm good at.</p>
           </a>

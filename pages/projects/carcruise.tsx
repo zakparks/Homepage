@@ -23,7 +23,7 @@ const CarCruise: NextPage = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              className={`${styles.card} ${styles.card1}`}
+              className={`${styles.longCard} ${styles.card1}`}
             >
               <h2>asdf</h2>
               <p>asdf</p>
