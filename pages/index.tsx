@@ -18,7 +18,11 @@ const Home: NextPage = () => {
 
         <p className={styles.description}>
           Hello there
-          <a href="https://www.youtube.com/watch?v=rEq1Z0bjdwc" target="_blank">
+          <a
+            href="https://www.youtube.com/watch?v=rEq1Z0bjdwc"
+            target="_blank"
+            rel="noreferrer"
+          >
             .
           </a>
         </p>
@@ -50,7 +54,7 @@ const Home: NextPage = () => {
         <Link href="">
           <a className={`${styles.longCard} ${styles.card4}`}>
             <h2>About me &rarr;</h2>
-            <p>What I do and what I'm good at.</p>
+            <p>What I do and what I&apos;m good at.</p>
           </a>
         </Link>
       </main>

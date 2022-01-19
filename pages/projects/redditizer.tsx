@@ -73,20 +73,21 @@ const Redditizer: NextPage = () => {
           <h2>Why I made it:</h2>
           <p>
             My friends and I switched from Facebook Messanger to Discord in mid
-            2017, and slowly ramped up and broadened our usage of Discord's
+            2017, and slowly ramped up and broadened our usage of Discord&apos;s
             feature set. By the time this idea was incepted, we had all sorts of
-            bots running and someone had a thought, "I wonder if there's a bot
-            to link subreddits I don't know about when people mention them".
-            There weren't any good options we could find, so I raced a friend to
-            build one first, mine in C# and his in JavaScript.
+            bots running and someone had a thought, &quot;I wonder if
+            there&apos;s a bot to link subreddits I don&apos;t know about when
+            people mention them&quot;. There weren&apos;t any good options we
+            could find, so I raced a friend to build one first, mine in C# and
+            his in JavaScript.
           </p>
           <br />
           <p>
             We hosted them on his Azure instance, and after trialing both of
             them for a week or so, we determined as a group that we talk
-            about/post way too many reddit links and didn't want the bot spam
-            anymore. All in all, it worked very well and was a quick, fun way to
-            learn working with new API's.
+            about/post way too many reddit links and didn&apos;t want the bot
+            spam anymore. All in all, it worked very well and was a quick, fun
+            way to learn working with new API&apos;s.
           </p>
         </div>
       </main>
