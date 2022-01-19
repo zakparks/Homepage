@@ -8,8 +8,9 @@ const Social: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Zak Parks&apos;s Socials</title>
-        <meta name="description" content="Zak Parks's Socials" />
+        <title>Zachary Parks</title>
+        <meta name="description" content="Zachary Parks's Socials" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>

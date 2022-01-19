@@ -8,8 +8,9 @@ const Social: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Zak Parks&apos;s Socials</title>
-        <meta name="description" content="Zak Parks's Projects" />
+        <title>Zachary Parks</title>
+        <meta name="description" content="Zachary Parks's Projects" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
@@ -21,23 +22,15 @@ const Social: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <Link href="#">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className={`${styles.card} ${styles.card1}`}
-            >
-              <h2>Project 1 &rarr;</h2>
-              <p>Project description 1</p>
+          <Link href="/projects/redditizer">
+            <a rel="noreferrer" className={`${styles.card} ${styles.card1}`}>
+              <h2>Redditizer &rarr;</h2>
+              <p>A C# Discord bot to link mentioned subreddits.</p>
             </a>
           </Link>
 
           <Link href="#">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className={`${styles.card} ${styles.card2}`}
-            >
+            <a rel="noreferrer" className={`${styles.card} ${styles.card2}`}>
               <h2>Project 2 &rarr;</h2>
               <p>Project description 2</p>
             </a>
@@ -46,7 +39,6 @@ const Social: NextPage = () => {
           <Link href="#">
             <a
               href="#"
-              target="_blank"
               rel="noreferrer"
               className={`${styles.card} ${styles.card3}`}
             >
