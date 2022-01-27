@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         <Link href="/resume">
           <a className={`${styles.longCard} ${styles.card2}`}>
             <h2>Resume &rarr;</h2>
-            <p>A fancy, web-based version of the paper you probably got this link from.</p>
+            <p>My employment history.</p>
           </a>
         </Link>
 
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         <Link href="">
           <a className={`${styles.longCard} ${styles.card4}`}>
             <h2>About me &rarr;</h2>
-            <p>What I do and what I&apos;m good at.</p>
+            <p>What I like to do, in and out of the job.</p>
           </a>
         </Link>
       </main>

@@ -37,13 +37,6 @@ const Social: NextPage = () => {
           </a>
         </Link>
 
-        <Link href="https://twitch.tv/speedofdark8">
-          <a target="_blank" rel="noreferrer" className={`${styles.longCard} ${styles.card4}`}>
-            <h2>Twitch &rarr;</h2>
-            <p>I have streamed games maybe 4 times. When the stars and planets align again catch me playing game here.</p>
-          </a>
-        </Link>
-
         <Link href="https://www.instagram.com/speedofdark8">
           <a target="_blank" rel="noreferrer" className={`${styles.longCard} ${styles.card5}`}>
             <h2>Instagram &rarr;</h2>

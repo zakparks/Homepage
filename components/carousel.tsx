@@ -27,7 +27,6 @@ const Carousel: React.FC<IProps> = ({ images }) => {
     <>
       <div className="slider">
         {links}
-
         <div className="slides">{slides}</div>
       </div>
     </>

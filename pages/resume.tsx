@@ -19,13 +19,13 @@ const Redditizer: NextPage = () => {
           <Link href="https://1drv.ms/w/s!AgNvzV-QN4CFgbhELYVD8rmgE1Zbdw?e=wKo9Su">
             <a target="_blank" rel="noreferrer">
               <p>
-                Word document <Image src="/download_w.svg" alt="Download Icon" width="24" height="24" />
+                Word document <Image src="/download_w.svg" alt="Download Icon" width="18" height="18" />
               </p>
             </a>
           </Link>
         </p>
 
-        <Collapsible open={true} title="Mid Atlantic Capital Group - Software Developer (Feb 2021 - Present)">
+        <Collapsible title="Mid Atlantic Capital Group - Software Developer (Feb 2021 - Present)">
           <div className={`${styles.cardContainer} `}>
             <div className={styles.grid}>
               <div className={`${styles.longCard} `}>
@@ -47,14 +47,16 @@ const Redditizer: NextPage = () => {
             <div className={`${styles.longCard} `}>
               <h2>Tasks:</h2>
               <ul>
+                <li>
+                  Create, configure, and deploy various Azure Functions (.NET 6, Azure Functions 4) in a synchronized workflow to ingest
+                  data from multiple clients, process them in Blob Storage, and then SFTP the results to other clients. The main function I
+                  worked on read CSV files, translated them to a different format based on a configurable JSON file, saved them as a
+                  pipe-delimited CSV file, and upload to a destination blob storage container.
+                </li>
                 <li> Modify and bug fix frontend components on the newly built Advisor Portal site (React + Typescript)</li>
                 <li>
                   Fully rewrite functionality from legacy VB .NET codebases in C# .NET 6, while keeping the production environment stable
                   for these processes.
-                </li>
-                <li>
-                  Create, configure, and deploy various Azure Functions (.NET 6, Azure Functions 4) in a synchronized workflow to ingest
-                  data from multiple clients, process them in Blob Storage, and then SFTP the results to other clients.
                 </li>
               </ul>
             </div>
