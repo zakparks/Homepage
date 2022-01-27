@@ -1,9 +1,24 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Carousel from "../../components/carousel";
+import ImageData from "../../models/ImageData";
 import styles from "../../styles/Home.module.css";
 
 const Redditizer: NextPage = () => {
+  const imageList: ImageData[] = [
+    {
+      src: "/../public/images/projects/redditizer/sampleDiscordEmbed.png",
+      title: "Screenshot of simple Bot Embed",
+      alt: "Screenshot of simple Bot Embed",
+    },
+    {
+      src: "/../public/images/projects/redditizer/sampleDiscordEmbed_top.png",
+      title: "Screenshot of Bot Embed with -top flag",
+      alt: "Screenshot of Bot Embed with -top flag",
+    },
+  ];
+
   return (
     <div className={styles.container}>
       <Head>
@@ -37,13 +52,7 @@ const Redditizer: NextPage = () => {
           </div>
         </div>
 
-        <Image
-          src="/public/images/projects/redditizer/sampleDiscordEmbed.png"
-          alt="Screenshot of Bot Embed"
-          className={styles.img}
-          width="643"
-          height="226"
-        />
+        <Carousel images={imageList} />
 
         <div className={`${styles.longCard} ${styles.card3}`}>
           <h2>What it is:</h2>
