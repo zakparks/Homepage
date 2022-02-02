@@ -74,12 +74,12 @@ const Redditizer: NextPage = () => {
         <div className={`${styles.longCard} ${styles.card4}`}>
           <h2>What I did:</h2>
           <p>
-            I was given the open ended requirement of "translate a CSV in Blob A and make it appear in Blob B". I was given a sample file
-            from an Advisor with a rough draft of the input/output CSV formats, and was eventually tasked with coordinating a final design
-            of the output based on this. Once I had a final design, I was wrote out the JSON file with the mappings to do the conversion.
-            While facilitating that, I researched C# CSV packages and decided on CSVHelper since it is easy to use, well documented,
-            open-source, and has a good feature set. Once the function was operational in a test environment, I deployed it to its final
-            destination set up by our Cloud Engineer.
+            I was given the open ended requirement of &quot;translate a CSV in Blob A and make it appear in Blob B&quot;. I was given a
+            sample file from an Advisor with a rough draft of the input/output CSV formats, and was eventually tasked with coordinating a
+            final design of the output based on this. Once I had a final design, I was wrote out the JSON file with the mappings to do the
+            conversion. While facilitating that, I researched C# CSV packages and decided on CSVHelper since it is easy to use, well
+            documented, open-source, and has a good feature set. Once the function was operational in a test environment, I deployed it to
+            its final destination set up by our Cloud Engineer.
           </p>
         </div>
       </main>

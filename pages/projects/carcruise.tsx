@@ -90,8 +90,8 @@ const CarCruise: NextPage = () => {
         <div className={`${styles.longCard} ${styles.card4}`}>
           <h2>Why I made it:</h2>
           <p>
-            At my job at the time, my responsibilities were being expanded to work on a XAML application. I hadn't ever worked with it at
-            the time so I decided to make something in my spare time to learn the technology. While I recognize a single-user desktop app
+            At my job at the time, my responsibilities were being expanded to work on a XAML application. I hadn&apos;t ever worked with it
+            at the time so I decided to make something in my spare time to learn the technology. While I recognize a single-user desktop app
             isn&apos;t the most convenient solution for this tallying task, it was valuable at the time to learn XAML.
           </p>
           <p>

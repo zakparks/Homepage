@@ -21,6 +21,7 @@ const Home: NextPage = () => {
             .
           </a>
         </p>
+        <p className={styles.description}>Site under construction</p>
 
         <Link href="/projects">
           <a className={`${styles.longCard} ${styles.card1}`}>

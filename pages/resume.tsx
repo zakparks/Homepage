@@ -19,7 +19,7 @@ const Redditizer: NextPage = () => {
           <Link href="https://1drv.ms/w/s!AgNvzV-QN4CFgbhELYVD8rmgE1Zbdw?e=wKo9Su">
             <a target="_blank" rel="noreferrer">
               <p>
-                Word document <Image src="/download_w.svg" alt="Download Icon" width="18" height="18" />
+                Download as Word document <Image src="/download_w.svg" alt="Download Icon" width="18" height="18" />
               </p>
             </a>
           </Link>

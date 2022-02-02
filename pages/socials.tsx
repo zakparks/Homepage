@@ -30,13 +30,6 @@ const Social: NextPage = () => {
           </a>
         </Link>
 
-        <Link href="https://twitter.com/speedofdark8">
-          <a target="_blank" rel="noreferrer" className={`${styles.longCard} ${styles.card3}`}>
-            <h2>Twitter &rarr;</h2>
-            <p>Here&apos;s where I follow some comedy, news, and art stuff.</p>
-          </a>
-        </Link>
-
         <Link href="https://www.instagram.com/speedofdark8">
           <a target="_blank" rel="noreferrer" className={`${styles.longCard} ${styles.card5}`}>
             <h2>Instagram &rarr;</h2>

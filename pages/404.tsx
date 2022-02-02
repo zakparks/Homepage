@@ -5,8 +5,8 @@ export default function Custom404() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Zachary Parks</title>
-        <meta name="description" content="Zachary Parks's Portfolio" />
+        <title>What did you do</title>
+        <meta name="description" content="404 page" />
       </Head>
 
       <main className={styles.main}>
