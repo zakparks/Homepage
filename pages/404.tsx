@@ -12,7 +12,7 @@ export default function Custom404() {
       <main className={styles.main}>
         <h1 className={styles.title}>404 - Page not found</h1>
 
-        <p className={styles.description}>Whatever you clicked, don&apos;t click that.</p>
+        <p className={styles.description}>Whatever you clicked, don&apos;t click that. I probably didn&apos;t make that page yet.</p>
       </main>
     </div>
   );

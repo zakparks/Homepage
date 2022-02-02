@@ -17,12 +17,12 @@ const Redditizer: NextPage = () => {
         <h1 className={styles.title}>CSV Conversion Azure Function</h1>
         <p className={styles.description}>
           An Azure Function that transforms and uploads a CSV file in Blob Storage. <br />
-          View the anonymized function on{" "}
+          {/* View the anonymized function on{" "}
           <Link href="https://github.com/zakparks/Redditizer">
             <a target="_blank" rel="noreferrer" className={styles.external}>
               GitHub.
             </a>
-          </Link>
+          </Link> */}
         </p>
 
         <div className={styles.grid}>

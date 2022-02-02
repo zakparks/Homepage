@@ -21,7 +21,6 @@ const Home: NextPage = () => {
             .
           </a>
         </p>
-        <p className={styles.description}>Site under construction</p>
 
         <Link href="/projects">
           <a className={`${styles.longCard} ${styles.card1}`}>
@@ -44,7 +43,7 @@ const Home: NextPage = () => {
           </a>
         </Link>
 
-        <Link href="">
+        <Link href="/404">
           <a className={`${styles.longCard} ${styles.card4}`}>
             <h2>About me &rarr;</h2>
             <p>What I like to do, in and out of the job.</p>

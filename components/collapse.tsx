@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import chevronUp from "../public/chevronUp.png";
+import chevronDown from "../public/chevronDown.png";
 
 interface IProps {
   open?: boolean;
@@ -22,9 +24,9 @@ const Collapsible: React.FC<IProps> = ({ open, children, title }) => {
             <h3>{title}</h3>
             <button type="button">
               {!isOpen ? (
-                <Image src="/public/static/chevronDown.png" alt="Down arrow" width="24" height="24" />
+                <Image src={chevronDown} alt="Down arrow" width="24" height="24" />
               ) : (
-                <Image src="/public/static/chevronUp.png" alt="Up arrow" width="24" height="24" />
+                <Image src={chevronUp} alt="Up arrow" width="24" height="24" />
               )}
             </button>
           </div>

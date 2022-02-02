@@ -5,6 +5,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Collapsible from "../components/collapse";
 
+import downloadIcon from "../public/download_w.svg";
+
 const Redditizer: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -19,7 +21,7 @@ const Redditizer: NextPage = () => {
           <Link href="https://1drv.ms/w/s!AgNvzV-QN4CFgbhELYVD8rmgE1Zbdw?e=wKo9Su">
             <a target="_blank" rel="noreferrer">
               <p>
-                Download as Word document <Image src="/download_w.svg" alt="Download Icon" width="18" height="18" />
+                Download as Word document <Image src={downloadIcon} alt="Download Icon" width="18" height="18" />
               </p>
             </a>
           </Link>
