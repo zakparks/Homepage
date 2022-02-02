@@ -3,6 +3,7 @@ import Head from "next/head";
 import Carousel from "../../components/carousel";
 import ImageData from "../../models/ImageData";
 import styles from "../../styles/Home.module.css";
+import Link from "next/link";
 
 const Redditizer: NextPage = () => {
   const imageList: ImageData[] = [
@@ -27,7 +28,15 @@ const Redditizer: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Redditizer</h1>
-        <p className={styles.description}>A Discord bot to link subreddits.</p>
+        <p className={styles.description}>
+          A Discord bot to link subreddits. <br />
+          View the code on{" "}
+          <Link href="https://github.com/zakparks/Redditizer">
+            <a target="_blank" rel="noreferrer" className={styles.external}>
+              GitHub.
+            </a>
+          </Link>
+        </p>
 
         <div className={styles.grid}>
           <div className={`${styles.shortCard} ${styles.card1}`}>

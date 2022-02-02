@@ -14,7 +14,23 @@ const Social: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>Projects</h1>
 
-        <p className={styles.description}>Various projects, personal and professional, and the reasonings behind them.</p>
+        <p className={styles.description}>Professional Projects:</p>
+
+        <Link href="/projects/pdr">
+          <a rel="noreferrer" className={`${styles.longCard} ${styles.card1}`}>
+            <h2>Production Detail Report (Mid Atlantic) &rarr;</h2>
+            <p>A React/TS page that displays custom transaction details to the user.</p>
+          </a>
+        </Link>
+
+        <Link href="/projects/csv">
+          <a rel="noreferrer" className={`${styles.longCard} ${styles.card2}`}>
+            <h2>CSV Conversion Azure Function (Mid Atlantic) &rarr;</h2>
+            <p>An Azure Function that transforms and uploads a CSV file in Blob Storage.</p>
+          </a>
+        </Link>
+
+        <p className={styles.description}>Personal Projects:</p>
 
         <Link href="/projects/redditizer">
           <a rel="noreferrer" className={`${styles.longCard} ${styles.card1}`}>
@@ -23,17 +39,10 @@ const Social: NextPage = () => {
           </a>
         </Link>
 
-        <Link href="#">
+        <Link href="/projects/carcruise">
           <a rel="noreferrer" className={`${styles.longCard} ${styles.card2}`}>
-            <h2>Project 2 &rarr;</h2>
-            <p>Project description 2</p>
-          </a>
-        </Link>
-
-        <Link href="#">
-          <a href="#" rel="noreferrer" className={`${styles.longCard} ${styles.card3}`}>
-            <h2>Project 3 &rarr;</h2>
-            <p>Project description 3</p>
+            <h2>Car Cruise Tally &rarr;</h2>
+            <p>A pair of C# desktop apps to do custom tallying for local car cruises.</p>
           </a>
         </Link>
       </main>

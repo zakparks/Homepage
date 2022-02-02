@@ -12,7 +12,7 @@ const Carousel: React.FC<IProps> = ({ images }) => {
 
   for (var i = 0; i < images.length; i++) {
     links.push(
-      <Link href={"#slide" + (i + 1)} scroll={false}>
+      <Link href={"#slide" + (i + 1)} replace={true} scroll={false}>
         <a>{i + 1}</a>
       </Link>
     );

@@ -26,9 +26,9 @@ const Redditizer: NextPage = () => {
         </p>
 
         <Collapsible title="Mid Atlantic Capital Group - Software Developer (Feb 2021 - Present)">
-          <div className={`${styles.cardContainer} `}>
+          <div className={styles.cardContainer}>
             <div className={styles.grid}>
-              <div className={`${styles.longCard} `}>
+              <div className={styles.longCard}>
                 <h2>Tools and Technologies:</h2>
                 <ul>
                   <li>C# .NET (Framework 4.5 and .NET 6)</li>
@@ -64,9 +64,9 @@ const Redditizer: NextPage = () => {
         </Collapsible>
 
         <Collapsible title="Elsevier - Software Developer (Feb 2020 - Dec 2021)">
-          <div className={`${styles.cardContainer} `}>
+          <div className={styles.cardContainer}>
             <div className={styles.grid}>
-              <div className={`${styles.longCard} `}>
+              <div className={styles.longCard}>
                 <h2>Tools and Technologies:</h2>
                 <ul>
                   <li>C# .NET (Framework 4.5)</li>
@@ -95,9 +95,9 @@ const Redditizer: NextPage = () => {
         </Collapsible>
 
         <Collapsible title="Bombardier Transportation - Software Engineer (Sept 2018 - Feb 2020)">
-          <div className={`${styles.cardContainer} `}>
+          <div className={styles.cardContainer}>
             <div className={styles.grid}>
-              <div className={`${styles.longCard} `}>
+              <div className={styles.longCard}>
                 <h2>Tools and Technologies:</h2>
                 <ul>
                   <li>C# .NET (Framework 3.5 and up)</li>
@@ -125,8 +125,8 @@ const Redditizer: NextPage = () => {
         </Collapsible>
 
         <Collapsible title="Bombardier Transportation - Junior Software Engineer (Oct 2015 - Sept 2018)">
-          <div className={`${styles.cardContainer} `}>
-            <div className={`${styles.longCard} `}>
+          <div className={styles.cardContainer}>
+            <div className={styles.longCard}>
               <h2>Tasks:</h2>
               <ul>
                 <li>Develop/maintain C# simulation software used to test the CITYFLO 650 driverless train system in a lab environment.</li>
@@ -147,9 +147,9 @@ const Redditizer: NextPage = () => {
         </Collapsible>
 
         <Collapsible title="M*Modal LTD - Software Support Engineer (June 2013 - Sept 2018)">
-          <div className={`${styles.cardContainer} `}>
+          <div className={styles.cardContainer}>
             <div className={styles.grid}>
-              <div className={`${styles.longCard} `}>
+              <div className={styles.longCard}>
                 <h2>Tools and Technologies:</h2>
                 <ul>
                   <li>C# .NET</li>
