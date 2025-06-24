@@ -6,6 +6,7 @@ import chevronDown from "../public/chevronDown.png";
 
 interface IProps {
   open?: boolean;
+  children: any;
   title: string;
 }
 
