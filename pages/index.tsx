@@ -11,7 +11,6 @@ const Home: NextPage = () => {
         <meta name="description" content="Zachary Parks's Portfolio" />
         <link rel="" href="/favicon.ico" />
       </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>Zachary Parks - Developer</h1>
 
@@ -22,32 +21,32 @@ const Home: NextPage = () => {
           </a>
         </p>
 
-        <Link href="/projects">
-          <a className={`${styles.longCard} ${styles.card1}`}>
-            <h2>Projects &rarr;</h2>
-            <p>Personal Projects and professional work.</p>
-          </a>
+        <Link href="/projects" className={`${styles.longCard} ${styles.card1}`}>
+
+          <h2>Projects &rarr;</h2>
+          <p>Personal Projects and professional work.</p>
+
         </Link>
 
-        <Link href="/resume">
-          <a className={`${styles.longCard} ${styles.card2}`}>
-            <h2>Resume &rarr;</h2>
-            <p>My employment history.</p>
-          </a>
+        <Link href="/resume" className={`${styles.longCard} ${styles.card2}`}>
+
+          <h2>Resume &rarr;</h2>
+          <p>My employment history.</p>
+
         </Link>
 
-        <Link href="/socials">
-          <a className={`${styles.longCard} ${styles.card3}`}>
-            <h2>Socials &rarr;</h2>
-            <p>Creep on me with the power of the internet.</p>
-          </a>
+        <Link href="/socials" className={`${styles.longCard} ${styles.card3}`}>
+
+          <h2>Socials &rarr;</h2>
+          <p>Creep on me with the power of the internet.</p>
+
         </Link>
 
-        <Link href="/404">
-          <a className={`${styles.longCard} ${styles.card4}`}>
-            <h2>About me &rarr;</h2>
-            <p>What I like to do, in and out of the job.</p>
-          </a>
+        <Link href="/404" className={`${styles.longCard} ${styles.card4}`}>
+
+          <h2>About me &rarr;</h2>
+          <p>What I like to do, in and out of the job.</p>
+
         </Link>
       </main>
     </div>

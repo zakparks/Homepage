@@ -25,21 +25,28 @@ const CarCruise: NextPage = () => {
         <title>Zachary Parks</title>
         <meta name="description" content="Car Cruise Tally" />
       </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>Car Cruise Tally</h1>
         <p className={styles.description}>
           Windows apps to tally local car cruise votes. <br />
           View the code on GitHub:{" "}
-          <Link href="https://github.com/zakparks/CarCruiseTally_Categories">
-            <a target="_blank" rel="noreferrer" className={styles.external}>
+          <Link
+            href="https://github.com/zakparks/CarCruiseTally_Categories"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.external}>
+            
               [1]
-            </a>
+            
           </Link>{" "}
-          <Link href="https://github.com/zakparks/CarCruiseTally">
-            <a target="_blank" rel="noreferrer" className={styles.external}>
+          <Link
+            href="https://github.com/zakparks/CarCruiseTally"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.external}>
+            
               [2]
-            </a>
+            
           </Link>
         </p>
 

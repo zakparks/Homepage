@@ -5,25 +5,25 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Collapsible from "../components/collapse";
 
-import downloadIcon from "../public/download_w.svg";
-
-const Redditizer: NextPage = () => {
+const Resume: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
         <title>Zachary Parks</title>
-        <meta name="description" content="Redditizer Discord Bot" />
+        <meta name="description" content="Resume" />
       </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>Resume</h1>
         <p className={styles.description}>
-          <Link href="https://1drv.ms/w/s!AgNvzV-QN4CFgbhELYVD8rmgE1Zbdw?e=wKo9Su">
-            <a target="_blank" rel="noreferrer">
-              <p>
-                Download as Word document <Image src={downloadIcon} alt="Download Icon" width="18" height="18" />
-              </p>
-            </a>
+          <Link
+            href="https://1drv.ms/w/s!AgNvzV-QN4CFgbhELYVD8rmgE1Zbdw?e=wKo9Su"
+            target="_blank"
+            rel="noreferrer">
+
+            <p>
+              Download as Word document <Image src="../public/download_w.svg" alt="Download Icon" width="18" height="18" />
+            </p>
+
           </Link>
         </p>
 
@@ -184,4 +184,4 @@ const Redditizer: NextPage = () => {
   );
 };
 
-export default Redditizer;
+export default Resume;
