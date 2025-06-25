@@ -25,16 +25,19 @@ const Redditizer: NextPage = () => {
         <title>Zachary Parks</title>
         <meta name="description" content="Redditizer Discord Bot" />
       </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>Redditizer</h1>
         <p className={styles.description}>
           A Discord bot to link subreddits. <br />
           View the code on{" "}
-          <Link href="https://github.com/zakparks/Redditizer">
-            <a target="_blank" rel="noreferrer" className={styles.external}>
+          <Link
+            href="https://github.com/zakparks/Redditizer"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.external}>
+            
               GitHub.
-            </a>
+            
           </Link>
         </p>
 
