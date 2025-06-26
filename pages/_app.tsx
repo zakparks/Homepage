@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import "../styles/carousel.css";
 import { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {

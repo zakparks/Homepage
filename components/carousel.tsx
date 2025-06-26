@@ -1,3 +1,4 @@
+import styles from "../styles/carousel.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import ImageData from "../models/ImageData";
@@ -25,9 +26,9 @@ const Carousel: React.FC<IProps> = ({ images }) => {
 
   return (
     <>
-      <div className="slider">
+      <div className={styles.slider}>
         {links}
-        <div className="slides">{slides}</div>
+        <div className={styles.slides}>{slides}</div>
       </div>
     </>
   );

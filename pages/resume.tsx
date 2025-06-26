@@ -21,7 +21,7 @@ const Resume: NextPage = () => {
             rel="noreferrer">
 
             <p>
-              Download as Word document <Image src="../public/download_w.svg" alt="Download Icon" width="18" height="18" />
+              Download as Word document <Image src="/download_w.svg" alt="Download Icon" width="18" height="18" />
             </p>
 
           </Link>

@@ -23,9 +23,9 @@ const Collapsible: React.FC<IProps> = ({ open, children, title }) => {
             <h3>{title}</h3>
             <button type="button">
               {!isOpen ? (
-                <Image src="../public/chevronDown.png" alt="Down arrow" width="24" height="24" />
+                <Image src="/chevronDown.png" alt="Down arrow" width="24" height="24" />
               ) : (
-                <Image src="../public/chevronUp.png" alt="Up arrow" width="24" height="24" />
+                <Image src="/chevronUp.png" alt="Up arrow" width="24" height="24" />
               )}
             </button>
           </div>
