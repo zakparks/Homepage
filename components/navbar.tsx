@@ -1,27 +1,36 @@
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import Image from "next/image";
+import IconLink from "./iconLink";
 
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
         <div className={styles.navbarSection}>
-          <Link className={styles.navbarLink} href="/">Home</Link>
-          <Link className={styles.navbarLink} href="/projects">Projects</Link>
-          <Link className={styles.navbarLink} href="/resume">Resume</Link>
-          <Link className={styles.navbarLink} href="/about">About Me</Link>
+          <Link className={`${styles.navbarLink} ${styles.card1}`} href="/">Home</Link>
+          <Link className={`${styles.navbarLink} ${styles.card2}`} href="/projects">Projects</Link>
+          <Link className={`${styles.navbarLink} ${styles.card3}`} href="/resume">Resume</Link>
+          <Link className={`${styles.navbarLink} ${styles.card4}`} href="/about">About Me</Link>
         </div>
 
         <div className={styles.navbarSection}>
-          <Link href="https://www.linkedin.com/in/zacharyparks/" target="_blank" rel="noopener noreferrer">
-            <Image className={styles.navbarIcon} src="/images/linkedin.png" alt="LinkedIn" width={20} height={20} />
-          </Link>
-          <Link href="https://github.com/zakparks" target="_blank" rel="noopener noreferrer">
-            <Image className={styles.navbarIcon} src="/images/github.png" alt="GitHub" width={20} height={20} />
-          </Link>
-          <Link href="https://www.instagram.com/speedofdark8" target="_blank" rel="noopener noreferrer">
-            <Image className={styles.navbarIcon} src="/images/insta.png" alt="Instagram" width={20} height={20} />
-          </Link>
+          <IconLink
+            href="https://www.linkedin.com/in/zacharyparks/"
+            alt="LinkedIn"
+            defaultSrc="/images/linkedin.png"
+            hoverSrc="/images/linkedin_color.png"
+          />
+          <IconLink
+            href="https://github.com/zakparks"
+            alt="GitHub"
+            defaultSrc="/images/github.png"
+            hoverSrc="/images/github_color.png"
+          />
+          <IconLink
+            href="https://www.instagram.com/speedofdark8"
+            alt="Instagram"
+            defaultSrc="/images/insta.png"
+            hoverSrc="/images/insta_color.png"
+          />
         </div>
     </div>
   );

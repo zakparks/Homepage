@@ -1,9 +1,8 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Collapsible from "../components/collapse";
+import IconLink from "../components/iconLink";
 
 const Resume: NextPage = () => {
   return (
@@ -15,19 +14,52 @@ const Resume: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>Resume</h1>
         <p className={styles.description}>
-          <Link
+          Download 
+          <IconLink
             href="https://1drv.ms/w/s!AgNvzV-QN4CFgbhELYVD8rmgE1Zbdw?e=wKo9Su"
-            target="_blank"
-            rel="noreferrer">
-
-            <p>
-              Download as Word document <Image src="/download_w.svg" alt="Download Icon" width="18" height="18" />
-            </p>
-
-          </Link>
+            alt="Download Word Document"
+            defaultSrc="/images/word.png"
+            hoverSrc="/images/word_color.png"
+          />
+          <IconLink
+            href="iDidntGenerateOneYet"
+            alt="Download PDF"
+            defaultSrc="/images/pdf.png"
+            hoverSrc="/images/pdf_color.png"
+          />
         </p>
 
-        <Collapsible title="Mid Atlantic Capital Group - Software Developer (Feb 2021 - Present)">
+          <Collapsible title="Talogy - Senior Software Developer (May 2022 - Nov 2025)">
+          <div className={styles.cardContainer}>
+            <div className={styles.grid}>
+              <div className={styles.longCard}>
+                <h2>Tools and Technologies:</h2>
+                <ul>
+                  <li>C# .NET (Framework 4.8 through .NET Core 8)</li>
+                  <li>ASP.NET Web Forms</li>
+                  <li>Classic ASP</li>
+                  <li>Angular</li>
+                  <li>Typescript</li>
+                  <li></li>
+                  <li>Azure Devops and Pipelines</li>
+                  <li>SQL Server &amp; SSMS</li>
+                  <li>Visual Studio 2022</li>
+                  <li>Git using GitExtensions</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className={`${styles.longCard} `}>
+              <h2>Tasks:</h2>
+              <ul>
+                <li> Design and build new Angular/.NET Core site, and build the APIs that interface with the existing SQL database.</li>
+                <li> Maintain and improve legacy ASP and ASP.NET MVC Razor sites. </li>
+              </ul>
+            </div>
+          </div>
+        </Collapsible>
+
+        <Collapsible title="Mid Atlantic Capital Group - Software Developer (Feb 2021 - May 2022)">
           <div className={styles.cardContainer}>
             <div className={styles.grid}>
               <div className={styles.longCard}>

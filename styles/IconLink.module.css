@@ -1,0 +1,33 @@
+.iconWrapper {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.iconWrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Initially show default */
+.default {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Initially hide hover version */
+.hover {
+  opacity: 0;
+  z-index: 2;
+}
+
+/* On hover, toggle visibility */
+.navbarSection a:hover .default {
+  opacity: 0;
+}
+
+.navbarSection a:hover .hover {
+  opacity: 1;
+}

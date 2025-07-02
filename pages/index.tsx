@@ -8,12 +8,12 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>Zachary Parks</title>
-        <meta name="description" content="Zachary Parks's Portfolio" />
+        <meta name="description" content="Zachary Parks" />
         <link rel="" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>Zachary Parks - Developer</h1>
-
+        <h1 className={styles.title}>Zachary Parks - Full-Stack Developer</h1>
+        <hr className={styles.hr} />
         <p className={styles.description}>
           Hello there
           <a href="https://www.youtube.com/watch?v=rEq1Z0bjdwc" target="_blank" rel="noreferrer">
