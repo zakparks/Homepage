@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import IconLink from "./iconLink";
+import IconLink from "../components/IconLink";
 
 const Navbar = () => {
   return (

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import styles from "../styles/IconLink.module.css";
 
 interface IconLinkProps {
@@ -12,24 +10,22 @@ interface IconLinkProps {
 
 const IconLink: React.FC<IconLinkProps> = ({ href, alt, defaultSrc, hoverSrc, size = 20 }) => {
   return (
-    <Link href={href} target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
-      <div className={styles.iconWrapper}>
-        <Image
+      <a href={href} target="_blank" rel="noopener noreferrer" className={styles.iconWrapper}>
+        <img
           src={defaultSrc}
           alt={alt}
           className={styles.default}
           width={size}
           height={size}
         />
-        <Image
+        <img
           src={hoverSrc}
           alt={alt}
           className={styles.hover}
           width={size}
           height={size}
         />
-      </div>
-    </Link>
+      </a>
   );
 };
 

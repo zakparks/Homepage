@@ -24,11 +24,6 @@ class MyDocument extends Document {
           <meta property="og:image" content="https://zakparks.dev/images/me.png" />
           <meta property="og:url" content="https://zakparks.dev" />
           <meta property="og:type" content="website" />
-
-          {/* Twitter Meta Tags */}
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Zachary Parks - Developer" />
-          <meta name="twitter:image" content="https://zakparks.dev/images/me.png" />
         </Head>
         <body>
           <Navbar />

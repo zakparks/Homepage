@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Collapsible from "../components/collapse";
-import IconLink from "../components/iconLink";
+import IconLink from "../components/IconLink";
 
 const Resume: NextPage = () => {
   return (
