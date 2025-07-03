@@ -12,7 +12,7 @@ const Social: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>Projects</h1>
-
+        <hr className={styles.hr} />
         <p className={styles.description}>Professional Projects:</p>
 
         <Link

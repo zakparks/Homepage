@@ -13,6 +13,7 @@ const Resume: NextPage = () => {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>Resume</h1>
+        <hr className={styles.hr} />
         <p className={styles.description}>
           Download 
           <IconLink

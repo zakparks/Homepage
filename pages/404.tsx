@@ -10,9 +10,11 @@ export default function Custom404() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>404 - Page not found</h1>
+        <h1 className={styles.title}>404 :(</h1>
+        <hr className={styles.hr} />
 
-        <p className={styles.description}>Whatever you clicked, don&apos;t click that. I probably didn&apos;t make that page yet.</p>
+        <p className={styles.description}>You broke it</p>
+        <img src="images/this-is-fine.gif" width={150} height={150}></img>
       </main>
     </div>
   );
