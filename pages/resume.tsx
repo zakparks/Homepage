@@ -12,24 +12,26 @@ const Resume: NextPage = () => {
         <meta name="description" content="Resume" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>Resume</h1>
-        <hr className={styles.hr} />
-        <p className={styles.description}>
-          Download 
-          <IconLink
-            href="https://1drv.ms/w/s!AgNvzV-QN4CFgbhELYVD8rmgE1Zbdw?e=wKo9Su"
-            alt="Download Word Document"
-            defaultSrc="/images/word.png"
-            hoverSrc="/images/word_color.png"
-          />
-          <IconLink
-            href="iDidntGenerateOneYet"
-            alt="Download PDF"
-            defaultSrc="/images/pdf.png"
-            hoverSrc="/images/pdf_color.png"
-          />
-        </p>
-
+        <div className={styles.intro}>
+          <h1 className={styles.title}>Resume</h1>
+          <hr className={styles.hr} />
+          <p className={styles.description}>
+            Download 
+            <IconLink
+              href="https://1drv.ms/w/s!AgNvzV-QN4CFgbhELYVD8rmgE1Zbdw?e=wKo9Su"
+              alt="Download Word Document"
+              defaultSrc="/images/word.png"
+              hoverSrc="/images/word_color.png"
+            />
+            <IconLink
+              href="iDidntGenerateOneYet"
+              alt="Download PDF"
+              defaultSrc="/images/pdf.png"
+              hoverSrc="/images/pdf_color.png"
+            />
+          </p>
+        </div>
+        <div className={styles.content}>
           <Collapsible title="Talogy - Senior Software Developer (May 2022 - Nov 2025)">
           <div className={styles.cardContainer}>
             <div className={styles.grid}>
@@ -212,6 +214,8 @@ const Resume: NextPage = () => {
             </div>
           </div>
         </Collapsible>
+        
+        </div>
       </main>
     </div>
   );
