@@ -5,6 +5,7 @@
 
 .main {
   min-height: 100vh;
+  padding-bottom: 6rem;
 }
 
 .intro {
@@ -204,29 +205,6 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-.collapseContainer {
-  border: 1px solid #eaeaea;
-  background-color: #2d2d2d;
-  width: 800px;
-}
-
-.collapseContainer h3 {
-  color: #eaeaea;
-  padding: 15px 15px;
-}
-
-.collapseContainer button {
-  margin-left: auto;
-  padding: 15px 15px;
-  background-color: transparent;
-}
-
-.collapseTitle {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }
 
 @media (max-width: 600px) {

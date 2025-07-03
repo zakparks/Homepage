@@ -1,0 +1,25 @@
+.collapseContainer {
+  border-top: 1px solid #eaeaea;
+  background-color: #2d2d2d;
+  width: 100%;
+
+  &>h3 {
+      color: #eaeaea;
+  }
+}
+
+.collapseContainer button {
+  background-color: transparent;
+}
+
+.collapseTitle {
+  display: flex;
+  text-align: left;
+  
+  &>button {
+    padding: 0;
+    border: none;
+    background: none;
+    margin-left: 0.5rem;
+  }
+}
