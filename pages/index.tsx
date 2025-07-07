@@ -41,7 +41,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div className={styles.intro}>
           <div className={styles.headerRow}>
-            <h1 className={styles.title}>Zachary Parks -<br className={styles.breakOnSmall} /> Full-Stack Developer</h1>
+            <h1 className={styles.title}>Zachary Parks -<br /> Full-Stack Developer</h1>
             <div className={styles.downloadButton}>
               <span className={styles.downloadText}>Download: </span>
               <div className={styles.iconDivider} />

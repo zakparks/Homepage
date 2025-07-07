@@ -318,16 +318,6 @@
 }
 
 /* Responsive */
-.breakOnSmall {
-  display: none;
-}
-
-@media (max-width: 1600px) {
-  .breakOnSmall {
-    display: inline;
-  }
-}
-
 @media (max-width: 1000px) {
   .content {
     margin-left: 2rem;
