@@ -83,7 +83,7 @@ const Home: NextPage = () => {
             <Collapsible title="Job Details">
               <p>
                 At Talogy, my team was responsible for maintaining and modernizing a Legacy ASP + ASP.NET MVC website. The first phase of
-                this was to migrate the codebase's source control from TFS to Github, the application's hosting into Azure, implementing
+                this was to migrate the codebase&apos;s source control from TFS to Github, the application&apos;s hosting into Azure, implementing
                 Redgate Flyway for database migrations, replace the build/deploy process with Azure Pipelines, and more. This was an involved
                 coordinated effort between our team, the devops team, and the database admin team over the course of a few months to get it 
                 fully operational.  
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
                 Once that was done, my team focused on improving reliability of the site. Now that it was in Azure and we had Application Insights
                 to better analyze logging, I spent time to clean up the code focusing on fixing non-impactful exceptions, rewriting code for
                 maintainability, and updating various components, dependancies, and packages to the most modern version possible. In doing so
-                I was able to reduce the solution from thousands of warnings and messages to about 40 (most of which remain due to packages we can't update),
+                I was able to reduce the solution from thousands of warnings and messages to about 40 (most of which remain due to packages we can&apos;t update),
                 and removed dozens of exceptions and errors that were clogging App Insights.
               </p>
               <p> 
@@ -136,7 +136,7 @@ const Home: NextPage = () => {
             <Collapsible title="Job Details">
             <p>
               At Mid Atlantic, I was hired to a newly created team for my experience modernizing old codebases and working in multiple 
-              effective teams utilizing Agile and Scrum. On the process side, I advised my team's Manager and Business Analyst on effective
+              effective teams utilizing Agile and Scrum. On the process side, I advised my team&apos;s Manager and Business Analyst on effective
               ways to run a typical 2-week sprint cycle, including all of the regular ceremonies and ticket management strategies.
             </p>
             <p> 
@@ -144,7 +144,7 @@ const Home: NextPage = () => {
               and I started by taking smaller pieces of the program and moving them to Azure Functions, where they could run independantly 
               of the core application. As an example, the main function I worked on read CSV files, translated them to a different format 
               based on a configurable JSON file, saved them as a pipe-delimited CSV file, and upload to a destination blob storage container. 
-              From there, we started to untangle the core application's main class, creating smaller testable components. 
+              From there, we started to untangle the core application&apos;s main class, creating smaller testable components. 
             </p>
             <p>
               Last, I also helped maintain our Advisor Portal website, the frontend of the application that allowed users

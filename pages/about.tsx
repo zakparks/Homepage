@@ -122,9 +122,9 @@ const About: NextPage = () => {
             
             <Collapsible title="Music and Arranging">
             <p>
-              I played my first instrument in 4th grade, playing trumpet like my dad did. Since then, I've played trumpet
+              I played my first instrument in 4th grade, playing trumpet like my dad did. Since then, I&apos;ve played trumpet
               in my high school/college marching bands and jazz bands, community bands after graduation, brass quintets, 
-              and more. To keep the creative musical outlet when I'm not in a band, I enjoy arranging music from all sorts 
+              and more. To keep the creative musical outlet when I&apos;m not in a band, I enjoy arranging music from all sorts 
               of genres for jazz band, brass quintet, or piano. I have an <a href="https://musescore.com/user/35703472">
               active profile on MuseScore.com</a>, a community driven site and application for writing and sharing sheet music.
             </p>
@@ -146,7 +146,7 @@ const About: NextPage = () => {
             <br />
             <Collapsible title="Eagle Scout Project">
             <p>
-              Down the road from my childhood home was a park and pavillion owned by Lion's Club International that my
+              Down the road from my childhood home was a park and pavillion owned by Lion&apos;s Club International that my
               family and I would often walk down to. For my project, I did renovations on the park including building new
               horeshoe pits, painting the pavillion, building an access ramp to a trail, and rebuilding their fence.
             </p>

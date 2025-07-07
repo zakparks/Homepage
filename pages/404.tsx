@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Custom404() {
@@ -15,7 +16,7 @@ export default function Custom404() {
           <hr className={styles.hr} />
 
           <p className={styles.description}>You broke it</p>
-          <img src="images/this-is-fine.gif" width={150} height={150}></img>
+          <Image src="images/this-is-fine.gif" alt="this-is-fine.gif" width={150} height={150} />
         </div>
       </main>
     </div>
