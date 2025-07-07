@@ -7,8 +7,6 @@ const Navbar = () => {
     <div className={styles.navbar}>
         <div className={styles.navbarSection}>
           <Link className={`${styles.navbarLink} ${styles.card1}`} href="/">Home</Link>
-          <Link className={`${styles.navbarLink} ${styles.card2}`} href="/projects">Projects</Link>
-          <Link className={`${styles.navbarLink} ${styles.card3}`} href="/resume">Resume</Link>
           <Link className={`${styles.navbarLink} ${styles.card4}`} href="/about">About Me</Link>
         </div>
 

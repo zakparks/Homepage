@@ -1,3 +1,4 @@
+/* Core layout */
 .container {
   background-color: #1e1e1e;
   color: #eaeaea;
@@ -28,6 +29,7 @@
   margin-right: 7rem;
 }
 
+/* Navbar and Footer */
 .navbar {
   background-color: #2d2d2d;
   color: #eaeaea;
@@ -76,15 +78,9 @@
   text-align: center;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
+/* Typography and animation */
 .title {
   font-size: 4rem;
-
   background: linear-gradient(
     to left,
     #d7ac57 20%,
@@ -100,12 +96,12 @@
 }
 
 @keyframes textShine {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .title,
@@ -125,91 +121,185 @@
   width: 100%;
 }
 
-.grid {
-  display: table;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.longCard {
+/* Cards */
+.jobDesc {
   display: table-cell;
   margin: 1.5rem;
   padding: 1.5rem;
-  text-align: left;
   color: inherit;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 0.75rem;
   background-color: #2d2d2d;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 90%;
-  min-width: 70%;
+  width: 85%;
 }
 
-.shortCard {
-  display: table-cell;
-  margin: 1px;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  background-color: #2d2d2d;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 398px;
+.jobDesc > h1 {
+  margin-bottom: 0rem;
 }
 
+/* Card hover colors */
 .card1:hover,
 .card1:focus,
 .card1:active {
-  color: #d7ac57;
   border-color: #d7ac57;
+}
+
+.card1:hover > h1,
+.card1:focus > h1,
+.card1:active > h1 {
+  color: #d7ac57;
 }
 
 .card2:hover,
 .card2:focus,
 .card2:active {
-  color: #9cdcfe;
   border-color: #9cdcfe;
+}
+
+.card2:hover > h1,
+.card2:focus > h1,
+.card2:active > h1 {
+  color: #9cdcfe;
 }
 
 .card3:hover,
 .card3:focus,
 .card3:active {
-  color: #ce9178;
   border-color: #ce9178;
+}
+
+.card3:hover > h1,
+.card3:focus > h1,
+.card3:active > h1 {
+  color: #ce9178;
 }
 
 .card4:hover,
 .card4:focus,
 .card4:active {
-  color: #b5cea8;
   border-color: #b5cea8;
+}
+
+.card4:hover > h1,
+.card4:focus > h1,
+.card4:active > h1 {
+  color: #b5cea8;
 }
 
 .card5:hover,
 .card5:focus,
 .card5:active {
-  color: #c586c0;
   border-color: #c586c0;
 }
 
-.longCard h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.card5:hover > h1,
+.card5:focus > h1,
+.card5:active > h1 {
+  color: #c586c0;
 }
 
-.longCard p {
+/* Bullet timeline layout */
+.bulletGroup {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.bulletWrapper {
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.bulletPoint {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #eaeaea;
+  transform: translateY(14px);
+  z-index: 1;
+}
+
+.bulletLine {
+  position: absolute;
+  top: 28px;
+  height: 45px;
+  width: 2px;
+  transform: translatex(2px);
+  background-color: #aaa;
+}
+
+.bulletContent {
+  padding-left: 8px;
+}
+
+.bulletContent h2 {
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
 }
 
+/* Metadata */
+.date {
+  margin: 0;
+  padding-left: 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Download section */
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  color: #eaeaea;
+}
+
+.downloadButton {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  border-radius: 0.75rem;
+  background-color: #2d2d2d;
+  box-shadow: none;
+  width: auto;
+  padding: 0.5rem 0.75rem;
+  transform: translateY(-0.75rem);
+}
+
+.downloadButton > :last-child {
+  margin-right: 0.75rem;
+}
+
+.downloadText {
+  font-size: 1.2rem;
+  color: #eaeaea;
+  padding-left: 0.75rem;
+  padding-right: 0.5rem;
+}
+
+.iconDivider {
+  width: 1px;
+  height: 3rem;
+  background-color: #eaeaea;
+  margin: 0 0.5rem;
+}
+
+/* Responsive */
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  .content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .intro {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
