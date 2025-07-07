@@ -1,68 +1,46 @@
-.slider {
-  width: 800px;
-  text-align: center;
-  overflow: hidden;
-  border: 1px solid #eaeaea;
-  background-color: #2d2d2d;
-}
-
-.slides {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-}
-
-.slides::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-.slides > div {
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  width: 800px;
-  height: 300px;
-  margin-right: 50px;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
-}
-
-.slides img {
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+.carouselWrapper {
   width: 100%;
-  height: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  background-color: #2d2d2d;
+  border: 1px solid #eaeaea;
+  border-radius: 0.75rem;
+  overflow: hidden;
 }
 
-.slider > a {
-  display: inline-flex;
-  width: 2rem;
-  height: 2rem;
-  background: #2d2d2d;
-  border: 1px solid #eaeaea;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0 0.5rem 0;
+.carouselBox {
   position: relative;
+  height: 500px;
+  width: 100%;
 }
 
-.slider a:hover,
-.slider a:focus,
-.slider a:active {
+.imageContainer {
+  position: absolute;
+  inset: 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: #eaeaea;
   background-color: #1e1e1e;
+  border-top: 1px solid #444;
 }
 
-.collapseContainer {
-  background: #2d2d2d;
+.controls button {
+  background-color: #2d2d2d;
   border: 1px solid #eaeaea;
+  color: #eaeaea;
+  padding: 0.3rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.2s;
+}
+
+.controls button:hover {
+  background-color: #3a3a3a;
 }

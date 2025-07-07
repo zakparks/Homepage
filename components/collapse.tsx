@@ -17,8 +17,8 @@ const Collapsible: React.FC<IProps> = ({ open, children, title }) => {
 
   return (
     <>
-      <div className={styles.collapseContainer} onClick={handleFilterOpening}>
-        <div className={styles.collapseTitle}>
+      <div className={styles.collapseContainer} >
+        <div className={styles.collapseTitle} onClick={handleFilterOpening} >
           <h3>{title}</h3>
           <button>
             {!isOpen ? (
