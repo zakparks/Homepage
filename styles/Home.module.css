@@ -10,23 +10,25 @@
 }
 
 .intro {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
   justify-content: left;
   align-items: left;
-  margin-left: 7rem;
-  margin-right: 7rem;
 }
 
 .content {
+  justify-content: top;
+  align-items: center;
+}
+
+.intro,
+.content {
+  margin-left: 7rem;
+  margin-right: 7rem;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: top;
-  align-items: center;
-  margin-left: 7rem;
-  margin-right: 7rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Navbar and Footer */
@@ -49,6 +51,9 @@
   gap: 1rem;
   margin-left: 7rem;
   margin-right: 7rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbarLeft a,
@@ -59,6 +64,7 @@
   text-decoration: none;
   padding: 0.5rem 0.75rem;
   transition: background-color 0.2s ease;
+  white-space: nowrap;
 }
 
 .navbarLeft a:hover,
@@ -142,60 +148,80 @@
 /* Card hover colors */
 .card1:hover,
 .card1:focus,
+.card1:focus-visible,
+.card1.touched,
 .card1:active {
   border-color: #d7ac57;
 }
 
 .card1:hover > h1,
 .card1:focus > h1,
+.card1:focus-visible > h1,
+.card1.touched > h1,
 .card1:active > h1 {
   color: #d7ac57;
 }
 
 .card2:hover,
 .card2:focus,
+.card2:focus-visible,
+.card2.touched,
 .card2:active {
   border-color: #9cdcfe;
 }
 
 .card2:hover > h1,
 .card2:focus > h1,
+.card2:focus-visible > h1,
+.card2.touched > h1,
 .card2:active > h1 {
   color: #9cdcfe;
 }
 
 .card3:hover,
 .card3:focus,
+.card3:focus-visible > h1,
+.card3.touched > h1,
 .card3:active {
   border-color: #ce9178;
 }
 
 .card3:hover > h1,
 .card3:focus > h1,
+.card3:focus-visible > h1,
+.card3.touched > h1,
 .card3:active > h1 {
   color: #ce9178;
 }
 
 .card4:hover,
 .card4:focus,
+.card4:focus-visible,
+.card4.touched,
 .card4:active {
   border-color: #b5cea8;
 }
 
 .card4:hover > h1,
 .card4:focus > h1,
+.card4:focus-visible > h1,
+.card4.touched > h1,
 .card4:active > h1 {
   color: #b5cea8;
 }
 
 .card5:hover,
 .card5:focus,
+.card5:focus-visible,
+.card5.touched,
 .card5:active {
   border-color: #c586c0;
 }
 
 .card5:hover > h1,
 .card5:focus > h1,
+.card5:focus-visible > h1,
+.card5.touched > h1,
 .card5:active > h1 {
   color: #c586c0;
 }
@@ -292,7 +318,17 @@
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+.breakOnSmall {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+  .breakOnSmall {
+    display: inline;
+  }
+}
+
+@media (max-width: 1000px) {
   .content {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -301,5 +337,39 @@
   .intro {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .downloadButton {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .jobDesc > h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .content {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .intro {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .navbarSection {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

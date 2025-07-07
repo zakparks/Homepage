@@ -1,10 +1,36 @@
 import { NextPage } from "next";
 import Head from "next/head";
+import { useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import Collapsible from "../components/collapse";
 import IconLink from "../components/IconLink";
 
 const Home: NextPage = () => {
+  // toggle colors on mobile
+  useEffect(() => {
+    const cards = document.querySelectorAll(".jobDesc");
+
+    const handleTouch = (e: TouchEvent) => {
+      const touchedCard = (e.target as HTMLElement).closest(".jobDesc");
+      if (touchedCard) {
+        // Remove .touched from all other cards
+        cards.forEach((c) => c.classList.remove("touched"));
+        touchedCard.classList.add("touched");
+      }
+    };
+
+    // Listen to any touch interaction (start, move, end)
+    document.addEventListener("touchstart", handleTouch, { passive: true });
+    document.addEventListener("touchmove", handleTouch, { passive: true });
+    document.addEventListener("touchend", handleTouch, { passive: true });
+
+    return () => {
+      document.removeEventListener("touchstart", handleTouch);
+      document.removeEventListener("touchmove", handleTouch);
+      document.removeEventListener("touchend", handleTouch);
+    };
+  }, []);
+
   return (
   <div className={styles.container}>
       <Head>
@@ -15,7 +41,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div className={styles.intro}>
           <div className={styles.headerRow}>
-            <h1 className={styles.title}>Zachary Parks - Full-Stack Developer</h1>
+            <h1 className={styles.title}>Zachary Parks -<br className={styles.breakOnSmall} /> Full-Stack Developer</h1>
             <div className={styles.downloadButton}>
               <span className={styles.downloadText}>Download: </span>
               <div className={styles.iconDivider} />
@@ -42,7 +68,7 @@ const Home: NextPage = () => {
  
         <div className={styles.content}>
           {/* Talogy */}
-          <div className={`${styles.jobDesc} ${styles.card1}`}>
+          <div className={`${styles.jobDesc} ${styles.card1}`} tabIndex={0}>
             <h1>Talogy - Senior Software Developer</h1>
             <p className={styles.date}>(May 2022 - Nov 2025)</p>
             <h3>Tasks:</h3>
@@ -95,7 +121,7 @@ const Home: NextPage = () => {
           </div>
 
           {/* Mid Atlantic */}
-          <div className={`${styles.jobDesc} ${styles.card2}`}>
+          <div className={`${styles.jobDesc} ${styles.card2}`} tabIndex={1}>
             <h1>Mid Atlantic Capital Group - Software Developer</h1>
             <p className={styles.date}>(Feb 2021 - May 2022)</p>
             <h3>Tasks:</h3>
@@ -142,7 +168,7 @@ const Home: NextPage = () => {
           </div>
 
           {/* Elsevier */}
-          <div className={`${styles.jobDesc} ${styles.card3}`}>
+          <div className={`${styles.jobDesc} ${styles.card3}`} tabIndex={2}>
             <h1>Elsevier - Software Developer</h1>
             <p className={styles.date}>(Feb 2020 - Dec 2021)</p>
             <h3>Tasks:</h3>
@@ -175,7 +201,7 @@ const Home: NextPage = () => {
           </div>
 
           {/* Bombardier */}
-          <div className={`${styles.jobDesc} ${styles.card4}`}>
+          <div className={`${styles.jobDesc} ${styles.card4}`} tabIndex={3}>
             <h1>Bombardier Transportation</h1>
             <div className={styles.bulletGroup}>
               <div className={styles.bulletWrapper}>
@@ -238,7 +264,7 @@ const Home: NextPage = () => {
           </div>
 
           {/* M*Modal */}
-          <div className={`${styles.jobDesc} ${styles.card5}`}>
+          <div className={`${styles.jobDesc} ${styles.card5}`} tabIndex={4}>
             <h1>M*Modal LTD - Software Support Engineer</h1>
             <p className={styles.date}>(June 2013 - Sept 2018)</p>
             <h3>Tasks:</h3>

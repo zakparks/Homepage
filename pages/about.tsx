@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import Head from "next/head";
+import { useEffect } from "react";
 import homeStyles from "../styles/Home.module.css";
 import styles from "../styles/about.module.css";
 import Collapsible from "../components/collapse";
@@ -41,6 +42,31 @@ const About: NextPage = () => {
     },
   ];
 
+  // toggle colors on mobile
+  useEffect(() => {
+    const cards = document.querySelectorAll(".jobDesc");
+
+    const handleTouch = (e: TouchEvent) => {
+      const touchedCard = (e.target as HTMLElement).closest(".jobDesc");
+      if (touchedCard) {
+        // Remove .touched from all other cards
+        cards.forEach((c) => c.classList.remove("touched"));
+        touchedCard.classList.add("touched");
+      }
+    };
+
+    // Listen to any touch interaction (start, move, end)
+    document.addEventListener("touchstart", handleTouch, { passive: true });
+    document.addEventListener("touchmove", handleTouch, { passive: true });
+    document.addEventListener("touchend", handleTouch, { passive: true });
+
+    return () => {
+      document.removeEventListener("touchstart", handleTouch);
+      document.removeEventListener("touchmove", handleTouch);
+      document.removeEventListener("touchend", handleTouch);
+    };
+  }, []);
+
   return (
     <div className={homeStyles.container}>
       <Head>
@@ -57,7 +83,7 @@ const About: NextPage = () => {
 
         <div className={homeStyles.content}>
           {/* CCC */}
-          <div className={`${styles.mainCard} ${styles.card1}`}>
+          <div className={`${styles.mainCard} ${styles.card1}`} tabIndex={0}>
             <h1>Canonsburg Cake Company</h1>
             <p className={styles.date}>(Sept 2021 - Present)</p>
             
@@ -91,7 +117,7 @@ const About: NextPage = () => {
           </div>
 
           {/* Hobbies */}
-          <div className={`${styles.mainCard} ${styles.card2}`}>
+          <div className={`${styles.mainCard} ${styles.card2}`} tabIndex={1}>
             <h1>Hobbies and Interests</h1>
             
             <Collapsible title="Music and Arranging">
@@ -113,7 +139,7 @@ const About: NextPage = () => {
           </div>
 
           {/* Accolades */}
-          <div className={`${styles.mainCard} ${styles.card3}`}>
+          <div className={`${styles.mainCard} ${styles.card3}`} tabIndex={2}>
             <h1>Accolades</h1>
             <h2>Boy Scouts of America: Eagle Scout</h2>
             <p className={styles.date}>(1998 - Apr 2009)</p>
