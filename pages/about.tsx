@@ -94,7 +94,7 @@ const About: NextPage = () => {
               space, and currently work there for events, weekends, and other things here and there. 
             </p>
             <p>
-              Check us out at <a href="https://www.canonsburgcakecompany.com">canonsburgcakecompany.com</a>. &nbsp;
+              Check us out at <a href="https://www.canonsburgcakecompany.com" target="_blank" rel="noopener noreferrer">canonsburgcakecompany.com</a>. &nbsp;
               <IconLink
                 href="https://www.facebook.com/CanonsburgCakeCompany"
                 alt="Facebook"
@@ -125,7 +125,7 @@ const About: NextPage = () => {
               I played my first instrument in 4th grade, playing trumpet like my dad did. Since then, I&apos;ve played trumpet
               in my high school/college marching bands and jazz bands, community bands after graduation, brass quintets, 
               and more. To keep the creative musical outlet when I&apos;m not in a band, I enjoy arranging music from all sorts 
-              of genres for jazz band, brass quintet, or piano. I have an <a href="https://musescore.com/user/35703472">
+              of genres for jazz band, brass quintet, or piano. I have an <a href="https://musescore.com/user/35703472" target="_blank" rel="noopener noreferrer">
               active profile on MuseScore.com</a>, a community driven site and application for writing and sharing sheet music.
             </p>
             </Collapsible>
