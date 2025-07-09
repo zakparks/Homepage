@@ -1,35 +1,10 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import { useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import Collapsible from "../components/collapse";
 import IconLink from "../components/IconLink";
 
 const Home: NextPage = () => {
-  // toggle colors on mobile
-  useEffect(() => {
-    const cards = document.querySelectorAll(".jobDesc");
-
-    const handleTouch = (e: TouchEvent) => {
-      const touchedCard = (e.target as HTMLElement).closest(".jobDesc");
-      if (touchedCard) {
-        // Remove .touched from all other cards
-        cards.forEach((c) => c.classList.remove("touched"));
-        touchedCard.classList.add("touched");
-      }
-    };
-
-    // Listen to any touch interaction (start, move, end)
-    document.addEventListener("touchstart", handleTouch, { passive: true });
-    document.addEventListener("touchmove", handleTouch, { passive: true });
-    document.addEventListener("touchend", handleTouch, { passive: true });
-
-    return () => {
-      document.removeEventListener("touchstart", handleTouch);
-      document.removeEventListener("touchmove", handleTouch);
-      document.removeEventListener("touchend", handleTouch);
-    };
-  }, []);
 
   return (
   <div className={styles.container}>
@@ -241,13 +216,15 @@ const Home: NextPage = () => {
                 I took documentation and technical manuals and implemented features and functionality based on those. Part of this
                 required coordination with multiple other teams to ensure all of the simulators worked in concert in our lab environment,
                 which contained actual train control hardware interfaced with simulation software to emulate a complete rail system.
-
+              </p>
+              <p>
                 As time went on and after being promoted to a Software Engineer, I spent time working on other simulators within my team,
                 notably on the Train Simulator which emulated each train object in the system. This simulator was fairly old, and needed
                 to be heavily optimized to increase the number of trains it could handle simulating simultainously. Myself and a subset of
                 my team were in charge of getting this upgraded, and were were able to increase the number of trains on the system from about
                 a dozen to upwards of 50 at a time by optimizing the codebase.
-
+              </p>
+              <p>
                 For one project, it was decided that a new simulator was needed. We utilized a sister team we had in India to develop this. 
                 I created and edited technical documents and provided it to them, and oversaw their development of the program. Once they
                 had it complete I took ownership of it, made final adjustment, and integrated it in to the lab environment for that project.

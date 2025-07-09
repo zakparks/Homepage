@@ -30,7 +30,6 @@
 .card1:hover,
 .card1:focus,
 .card1:focus-visible,
-.card1.touched,
 .card1:active {
     border-color: #d7ac57;
 
@@ -42,7 +41,6 @@
 .card1:hover a,
 .card1:focus a,
 .card1:focus-visible a,
-.card1.touched a,
 .card1:active a {
   color: #d7ac57;
   text-decoration: underline;
@@ -51,7 +49,6 @@
 .card2:hover,
 .card2:focus,
 .card2:focus-visible,
-.card2.touched
 .card2:active {
     border-color: #9cdcfe;
 
@@ -64,7 +61,6 @@
 .card2:hover a,
 .card2:focus a,
 .card2:focus-visible a,
-.card2.touched a,
 .card2:active a {
   color: #9cdcfe;
   text-decoration: underline;
@@ -73,7 +69,6 @@
 .card3:hover,
 .card3:focus,
 .card3:focus-visible,
-.card3.touched,
 .card3:active {
     border-color: #ce9178;
 

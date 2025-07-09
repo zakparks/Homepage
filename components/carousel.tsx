@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "../styles/carousel.module.css";
@@ -11,20 +11,31 @@ interface IProps {
 
 const Carousel: React.FC<IProps> = ({ images, interval = 4000 }) => {
   const [index, setIndex] = useState(0);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  useEffect(() => {
-    const id = setInterval(() => {
+  const startInterval = () => {
+    // Clear any existing interval first
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
     }, interval);
-    return () => clearInterval(id);
+  };
+
+  useEffect(() => {
+    startInterval();
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+    };
   }, [images.length, interval]);
 
   const handlePrev = () => {
     setIndex((prev) => (prev - 1 + images.length) % images.length);
+    startInterval(); // Reset timer
   };
 
   const handleNext = () => {
     setIndex((prev) => (prev + 1) % images.length);
+    startInterval(); // Reset timer
   };
 
   return (

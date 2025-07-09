@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import { useEffect } from "react";
 import homeStyles from "../styles/Home.module.css";
 import styles from "../styles/about.module.css";
 import Collapsible from "../components/collapse";
@@ -42,31 +41,6 @@ const About: NextPage = () => {
     },
   ];
 
-  // toggle colors on mobile
-  useEffect(() => {
-    const cards = document.querySelectorAll(".jobDesc");
-
-    const handleTouch = (e: TouchEvent) => {
-      const touchedCard = (e.target as HTMLElement).closest(".jobDesc");
-      if (touchedCard) {
-        // Remove .touched from all other cards
-        cards.forEach((c) => c.classList.remove("touched"));
-        touchedCard.classList.add("touched");
-      }
-    };
-
-    // Listen to any touch interaction (start, move, end)
-    document.addEventListener("touchstart", handleTouch, { passive: true });
-    document.addEventListener("touchmove", handleTouch, { passive: true });
-    document.addEventListener("touchend", handleTouch, { passive: true });
-
-    return () => {
-      document.removeEventListener("touchstart", handleTouch);
-      document.removeEventListener("touchmove", handleTouch);
-      document.removeEventListener("touchend", handleTouch);
-    };
-  }, []);
-
   return (
     <div className={homeStyles.container}>
       <Head>
@@ -87,33 +61,35 @@ const About: NextPage = () => {
             <h1>Canonsburg Cake Company</h1>
             <p className={styles.date}>(Sept 2021 - Present)</p>
             
-            <p>
-              In 2021, my wife turned her hobby of baking cakes and cupcakes into a proper licenced business, and it
-              rapidly took off. We certified our home kitchen to start out, and within 6 months she had left her day job
-              to open a brick and mortar store in the heart of our hometown. I helped then with carpentry and building out the
-              space, and currently work there for events, weekends, and other things here and there. 
-            </p>
-            <p>
-              Check us out at <a href="https://www.canonsburgcakecompany.com" target="_blank" rel="noopener noreferrer">canonsburgcakecompany.com</a>. &nbsp;
-              <IconLink
-                href="https://www.facebook.com/CanonsburgCakeCompany"
-                alt="Facebook"
-                defaultSrc="/images/fb.png"
-                hoverSrc="/images/fb_color.png"
-              /> &nbsp;
-              <IconLink
-                href="https://www.instagram.com/canonsburgcakecompany/"
-                alt="Instagram"
-                defaultSrc="/images/insta.png"
-                hoverSrc="/images/insta_color.png"
-              /> &nbsp;
-              <IconLink
-                href="https://www.tiktok.com/@canonsburgcakecompany/"
-                alt="TikTok"
-                defaultSrc="/images/tiktok.png"
-                hoverSrc="/images/tiktok_color.png"
-              />
-            </p>
+            <Collapsible title="About">
+              <p>
+                In 2021, my wife turned her hobby of baking cakes and cupcakes into a proper licenced business, and it
+                rapidly took off. We certified our home kitchen to start out, and within 6 months she had left her day job
+                to open a brick and mortar store in the heart of our hometown. I helped then with carpentry and building out the
+                space, and currently work there for events, weekends, and other things here and there. 
+              </p>
+              <p>
+                Check us out at <a href="https://www.canonsburgcakecompany.com" target="_blank" rel="noopener noreferrer">canonsburgcakecompany.com</a>. &nbsp;
+                <IconLink
+                  href="https://www.facebook.com/CanonsburgCakeCompany"
+                  alt="Facebook"
+                  defaultSrc="/images/fb.png"
+                  hoverSrc="/images/fb_color.png"
+                /> &nbsp;
+                <IconLink
+                  href="https://www.instagram.com/canonsburgcakecompany/"
+                  alt="Instagram"
+                  defaultSrc="/images/insta.png"
+                  hoverSrc="/images/insta_color.png"
+                /> &nbsp;
+                <IconLink
+                  href="https://www.tiktok.com/@canonsburgcakecompany/"
+                  alt="TikTok"
+                  defaultSrc="/images/tiktok.png"
+                  hoverSrc="/images/tiktok_color.png"
+                />
+              </p>
+            </Collapsible>
           </div>
 
           {/* Hobbies */}

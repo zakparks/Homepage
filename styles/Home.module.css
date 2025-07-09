@@ -149,7 +149,6 @@
 .card1:hover,
 .card1:focus,
 .card1:focus-visible,
-.card1.touched,
 .card1:active {
   border-color: #d7ac57;
 }
@@ -157,7 +156,6 @@
 .card1:hover > h1,
 .card1:focus > h1,
 .card1:focus-visible > h1,
-.card1.touched > h1,
 .card1:active > h1 {
   color: #d7ac57;
 }
@@ -165,7 +163,6 @@
 .card2:hover,
 .card2:focus,
 .card2:focus-visible,
-.card2.touched,
 .card2:active {
   border-color: #9cdcfe;
 }
@@ -173,7 +170,6 @@
 .card2:hover > h1,
 .card2:focus > h1,
 .card2:focus-visible > h1,
-.card2.touched > h1,
 .card2:active > h1 {
   color: #9cdcfe;
 }
@@ -181,7 +177,6 @@
 .card3:hover,
 .card3:focus,
 .card3:focus-visible > h1,
-.card3.touched > h1,
 .card3:active {
   border-color: #ce9178;
 }
@@ -189,7 +184,6 @@
 .card3:hover > h1,
 .card3:focus > h1,
 .card3:focus-visible > h1,
-.card3.touched > h1,
 .card3:active > h1 {
   color: #ce9178;
 }
@@ -197,7 +191,6 @@
 .card4:hover,
 .card4:focus,
 .card4:focus-visible,
-.card4.touched,
 .card4:active {
   border-color: #b5cea8;
 }
@@ -205,7 +198,6 @@
 .card4:hover > h1,
 .card4:focus > h1,
 .card4:focus-visible > h1,
-.card4.touched > h1,
 .card4:active > h1 {
   color: #b5cea8;
 }
@@ -213,7 +205,6 @@
 .card5:hover,
 .card5:focus,
 .card5:focus-visible,
-.card5.touched,
 .card5:active {
   border-color: #c586c0;
 }
@@ -221,7 +212,6 @@
 .card5:hover > h1,
 .card5:focus > h1,
 .card5:focus-visible > h1,
-.card5.touched > h1,
 .card5:active > h1 {
   color: #c586c0;
 }
@@ -362,4 +352,23 @@
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+/* smartphones */
+@media only screen and (hover: none) {
+
+  .content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .jobDesc > ul {
+    padding-left: 1rem;
+  }
+
+  .intro {
+    margin-left: 1;
+    margin-right: 1;
+  }
+
 }
