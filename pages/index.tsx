@@ -29,7 +29,7 @@ const Home: NextPage = () => {
               />
               <div className={styles.iconDivider} />
               <IconLink
-                href="iDidntGenerateOneYet"
+                href="https://1drv.ms/b/c/858037905fcd6f03/EcIpWWbk6ulIpb00J8mNTAMBDq8zNGfMxaIxHXjOkguh3A?e=9ZJA1f"
                 alt="Download PDF"
                 defaultSrc="/images/pdf.png"
                 hoverSrc="/images/pdf_color.png"
