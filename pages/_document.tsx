@@ -1,6 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import { Analytics } from '@vercel/analytics/next';
 
 class MyDocument extends Document {
   render() {
@@ -30,6 +31,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           <Footer />
+          <Analytics />
         </body>
       </Html>
     );
