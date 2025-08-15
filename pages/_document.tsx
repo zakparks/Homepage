@@ -1,7 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import { Analytics } from '@vercel/analytics/next';
 
 class MyDocument extends Document {
   render() {
@@ -27,11 +24,8 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
         </Head>
         <body>
-          <Navbar />
           <Main />
           <NextScript />
-          <Footer />
-          <Analytics />
         </body>
       </Html>
     );
