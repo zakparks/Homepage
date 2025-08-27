@@ -21,7 +21,7 @@ const Home: NextPage = () => {
               <span className={styles.downloadText}>Download: </span>
               <div className={styles.iconDivider} />
               <IconLink
-                href="https://1drv.ms/w/s!AgNvzV-QN4CFgbhELYVD8rmgE1Zbdw?e=wKo9Su"
+                href="/dl/resume-doc"
                 alt="Download Word Document"
                 defaultSrc="/images/word.png"
                 hoverSrc="/images/word_color.png"
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
               />
               <div className={styles.iconDivider} />
               <IconLink
-                href="https://1drv.ms/b/c/858037905fcd6f03/EcIpWWbk6ulIpb00J8mNTAMBDq8zNGfMxaIxHXjOkguh3A?e=9ZJA1f"
+                href="/dl/resume-pdf"
                 alt="Download PDF"
                 defaultSrc="/images/pdf.png"
                 hoverSrc="/images/pdf_color.png"
