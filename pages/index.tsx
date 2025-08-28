@@ -145,7 +145,7 @@ const Home: NextPage = () => {
           {/* Elsevier */}
           <div className={`${styles.jobDesc} ${styles.card3}`} tabIndex={2}>
             <h1>Elsevier - Software Developer</h1>
-            <p className={styles.date}>(Feb 2020 - Dec 2021)</p>
+            <p className={styles.date}>(Feb 2020 - Dec 2020)</p>
             <h3>Tasks:</h3>
             <ul>
               <li>Created, updated and added new features to the backend of ASP.NET MVC Razor pages for internal content creation and
